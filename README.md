@@ -7,10 +7,14 @@ As of 2/25/2022 npm wrtc does not support the Apple M1 processor. These instruct
 
 In your project directory install the Intel version of wrtc:
 
-```npm i wrtc --target_arch=x64```
+```sh
+npm i wrtc --target_arch=x64 --ignore-scripts
+```
 
 ## Patch in the M1 build of wrtc
 
 Replace the Intel build of wrtc.node in your project directory with the M1 version (wrtc-v0.5.0-napi-v3-darwin-arm64.tar.gz taken from [here](https://github.com/corwin-of-amber/node-webrtc/releases))
 
-```cp m1wrtc/wrtc.node node_modules/wrtc/buidl/Release/wrtc.node```
+```sh
+cp m1wrtc/wrtc.node node_modules/wrtc/build/Release/wrtc.node
+```

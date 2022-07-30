@@ -9,6 +9,8 @@ In your project directory install the Intel version of wrtc:
 
 ```npm i wrtc --target_arch=x64```
 
+Some people have reported needing to add ```--ignore-scripts```.
+
 ## Patch in the M1 build of wrtc
 
 Replace the Intel build of wrtc.node in your project directory with the M1 version (wrtc-v0.5.0-napi-v3-darwin-arm64.tar.gz taken from [here](https://github.com/corwin-of-amber/node-webrtc/releases))
